@@ -1,0 +1,271 @@
+<section class="page" id="menu">
+  <div class="section-header">
+    <p class="section-tag">Curated Offerings</p>
+    <h2 class="section-title">The <em>Menu</em></h2>
+    <div class="divider"></div>
+    <p style="font-size:0.85rem; color:rgba(245,240,232,0.4); max-width:420px; margin:0 auto; line-height:1.8;">
+      Each dish is a conversation between tradition and imagination — seasonal, intentional, and alive.
+    </p>
+  </div>
+ 
+  <div class="menu-tabs">
+    <button class="tab-btn active" onclick="switchTab('starters')">Starters</button>
+    <button class="tab-btn" onclick="switchTab('mains')">Mains</button>
+    <button class="tab-btn" onclick="switchTab('omakase')">Omakase</button>
+    <button class="tab-btn" onclick="switchTab('drinks')">Drinks</button>
+  </div>
+ 
+  <div class="menu-grid">
+ 
+    <!-- STARTERS -->
+    <div class="menu-panel active" id="tab-starters">
+      <div class="menu-item">
+        <div class="item-kanji">前菜 / 刺身</div>
+        <div class="item-top"><span class="item-name">Bluefin Tataki</span><span class="item-price">$32</span></div>
+        <p class="item-desc">Seared bluefin tuna, yuzu kosho, micro shiso, pickled daikon pearls, truffle oil drizzle.</p>
+        <span class="item-tag">Chef's Pick</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-kanji">揚げ物</div>
+        <div class="item-top"><span class="item-name">Wagyu Gyoza</span><span class="item-price">$28</span></div>
+        <p class="item-desc">A5 Wagyu pan-fried dumplings, black garlic ponzu, togarashi emulsion.</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-kanji">冷前菜</div>
+        <div class="item-top"><span class="item-name">Dashi Chawanmushi</span><span class="item-price">$22</span></div>
+        <p class="item-desc">Silken egg custard, Hokkaido scallop, edamame purée, ikura, gold leaf.</p>
+        <span class="item-tag">Vegan Option</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-kanji">サラダ</div>
+        <div class="item-top"><span class="item-name">Kyoto Garden Salad</span><span class="item-price">$18</span></div>
+        <p class="item-desc">Heritage heirloom lettuces, sesame-miso dressing, toasted walnuts, crispy lotus root.</p>
+        <span class="item-tag">Vegan</span>
+      </div>
+    </div>
+ 
+    <!-- MAINS -->
+    <div class="menu-panel" id="tab-mains">
+      <div class="menu-item">
+        <div class="item-kanji">黒毛和牛</div>
+        <div class="item-top"><span class="item-name">A5 Wagyu Ribeye</span><span class="item-price">$120</span></div>
+        <p class="item-desc">200g Japanese A5 Wagyu, aged miso butter, sansho pepper jus, roasted king oyster.</p>
+        <span class="item-tag">Signature</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-kanji">鯛料理</div>
+        <div class="item-top"><span class="item-name">Sakura Sea Bream</span><span class="item-price">$68</span></div>
+        <p class="item-desc">Whole roasted sea bream, cherry blossom salt, shiso oil, warm dashi beurre blanc.</p>
+        <span class="item-tag">Chef's Pick</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-kanji">鴨肉</div>
+        <div class="item-top"><span class="item-name">Duck Shabu</span><span class="item-price">$75</span></div>
+        <p class="item-desc">Thin-sliced duck breast, kombu dashi broth, tofu, seasonal vegetables, ponzu.</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-kanji">精進料理</div>
+        <div class="item-top"><span class="item-name">Temple Garden Yasai</span><span class="item-price">$48</span></div>
+        <p class="item-desc">Shojin-inspired seasonal vegetables, miso-glazed eggplant, sesame tofu, dashi broth.</p>
+        <span class="item-tag">Vegan</span>
+      </div>
+    </div>
+ 
+    <!-- OMAKASE -->
+    <div class="menu-panel" id="tab-omakase">
+      <div class="menu-item">
+        <div class="item-kanji">おまかせ</div>
+        <div class="item-top"><span class="item-name">Hana Omakase</span><span class="item-price">$185 pp</span></div>
+        <p class="item-desc">7-course tasting journey through seasonal flavors — curated nightly by Chef Hiroshi. Includes sake pairing option.</p>
+        <span class="item-tag">Reservation Required</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-kanji">懐石料理</div>
+        <div class="item-top"><span class="item-name">Kaiseki Experience</span><span class="item-price">$280 pp</span></div>
+        <p class="item-desc">12-course full kaiseki ritual — a meditative dining experience reflecting the rhythm of the seasons.</p>
+        <span class="item-tag">Signature</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-kanji">鮨</div>
+        <div class="item-top"><span class="item-name">Nigiri Omakase</span><span class="item-price">$145 pp</span></div>
+        <p class="item-desc">10 hand-pressed nigiri, chef's selection of seasonal fish, aged soy, fresh wasabi.</p>
+        <span class="item-tag">Chef's Pick</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-kanji">茶道</div>
+        <div class="item-top"><span class="item-name">Matcha Ceremony</span><span class="item-price">$45 pp</span></div>
+        <p class="item-desc">A guided ritual of ceremonial-grade matcha preparation with seasonal wagashi confections.</p>
+        <span class="item-tag">Supplement</span>
+      </div>
+    </div>
+ 
+    <!-- DRINKS -->
+    <div class="menu-panel" id="tab-drinks">
+      <div class="menu-item">
+        <div class="item-kanji">日本酒</div>
+        <div class="item-top"><span class="item-name">Dassai 23 Junmai</span><span class="item-price">$38</span></div>
+        <p class="item-desc">Silky, fruity Daiginjo sake with notes of melon and white peach. Yamaguchi Prefecture.</p>
+        <span class="item-tag">House Favourite</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-kanji">カクテル</div>
+        <div class="item-top"><span class="item-name">Sakura Martini</span><span class="item-price">$22</span></div>
+        <p class="item-desc">Japanese gin, cherry blossom liqueur, yuzu foam, preserved cherry garnish.</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-kanji">抹茶</div>
+        <div class="item-top"><span class="item-name">Ceremonial Matcha</span><span class="item-price">$14</span></div>
+        <p class="item-desc">Uji ceremonial-grade matcha, whisked to order. Hot or cold-shaken. Oat milk available.</p>
+        <span class="item-tag">Non-alcoholic</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-kanji">焼酎</div>
+        <div class="item-top"><span class="item-name">Shochu Old Fashioned</span><span class="item-price">$24</span></div>
+        <p class="item-desc">Imo shochu, house-made kuromitsu syrup, Angostura, toasted sesame smoke.</p>
+        <span class="item-tag">Signature</span>
+      </div>
+    </div>
+ 
+  </div><!-- /menu-grid -->
+</section>
+ 
+<!-- ══════════════════ ABOUT PAGE ══════════════════ -->
+<section class="page" id="about">
+  <div class="about-grid">
+    <div class="about-visual">
+      <div class="about-img-frame">
+        <div class="about-img-inner">
+          <div class="about-kanji-decor">光苑料理</div>
+        </div>
+      </div>
+      <div class="about-accent-box">
+        <span class="accent-num">18</span>
+        <span class="accent-label">Years of Craft</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="section-header" style="text-align:left;">
+        <p class="section-tag">Our Story</p>
+        <h2 class="section-title">The <em>Art</em> of<br>Nourishment</h2>
+        <div class="divider" style="margin-left:0;"></div>
+      </div>
+      <p class="about-body">
+        KŌEN — meaning "luminous garden" — was born from a decade of study in Kyoto's oldest kaiseki kitchens and a deep love for the unexpected. Chef Hiroshi Tanaka returned to New York with a simple conviction: that Japanese cuisine, at its truest, is not about restriction but about listening.
+      </p>
+      <p class="about-body">
+        Listening to the season. To the ingredient. To the guest. Every dish at KŌEN begins with a question: what does this moment want to say?
+      </p>
+ 
+      <div class="philosophy-grid">
+        <div class="phil-item">
+          <div class="phil-icon">🌿</div>
+          <div class="phil-title">Seasonal Sourcing</div>
+          <p class="phil-desc">Ingredients are chosen weekly from trusted farms and fisheries — no frozen shortcuts.</p>
+        </div>
+        <div class="phil-item">
+          <div class="phil-icon">🔥</div>
+          <div class="phil-title">Ancient Technique</div>
+          <p class="phil-desc">We practice traditional Japanese culinary methods passed down through generations.</p>
+        </div>
+        <div class="phil-item">
+          <div class="phil-icon">✦</div>
+          <div class="phil-title">Ma Philosophy</div>
+          <p class="phil-desc">The Japanese concept of "negative space" — we believe in what is not on the plate.</p>
+        </div>
+        <div class="phil-item">
+          <div class="phil-icon">🍶</div>
+          <div class="phil-title">Zero Waste Kitchen</div>
+          <p class="phil-desc">Dashi is made from yesterday's trimmings. Nothing is wasted. Everything is honored.</p>
+        </div>
+      </div>
+ 
+      <div class="about-signature">Hiroshi Tanaka</div>
+      <div class="about-sig-title">Executive Chef & Founder</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════════════ RESERVE PAGE ══════════════════ -->
+<section class="page" id="reserve">
+  <div class="reserve-inner">
+    <div class="section-header">
+      <p class="section-tag">Join Us</p>
+      <h2 class="section-title">Make a <em>Reservation</em></h2>
+      <div class="divider"></div>
+      <p style="font-size:0.85rem; color:rgba(245,240,232,0.4); line-height:1.8;">
+        Tables are limited. We recommend reserving at least one week in advance<br>for omakase experiences.
+      </p>
+    </div>
+ 
+    <div class="reserve-form" id="reserve-form">
+      <div class="form-group">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-input" placeholder="Yuki">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Last Name</label>
+        <input type="text" class="form-input" placeholder="Tanaka">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-input" placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" class="form-input" placeholder="+1 (000) 000-0000">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Date</label>
+        <input type="date" class="form-input">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Time</label>
+        <select class="form-select">
+          <option>6:00 PM</option>
+          <option>6:30 PM</option>
+          <option>7:00 PM</option>
+          <option>7:30 PM</option>
+          <option>8:00 PM</option>
+          <option>8:30 PM</option>
+          <option>9:00 PM</option>
+        </select>
+      </div>
+      <div class="form-group full">
+        <label class="form-label">Number of Guests</label>
+        <div class="reserve-guests">
+          <button class="guest-btn" onclick="selectGuests(this)">1</button>
+          <button class="guest-btn active" onclick="selectGuests(this)">2</button>
+          <button class="guest-btn" onclick="selectGuests(this)">3</button>
+          <button class="guest-btn" onclick="selectGuests(this)">4</button>
+          <button class="guest-btn" onclick="selectGuests(this)">5</button>
+          <button class="guest-btn" onclick="selectGuests(this)">6+</button>
+        </div>
+      </div>
+      <div class="form-group full">
+        <label class="form-label">Experience</label>
+        <select class="form-select">
+          <option>À la carte dining</option>
+          <option>Hana Omakase (7 courses)</option>
+          <option>Kaiseki Experience (12 courses)</option>
+          <option>Nigiri Omakase</option>
+        </select>
+      </div>
+      <div class="form-group full">
+        <label class="form-label">Special Requests</label>
+        <textarea class="form-textarea" placeholder="Dietary restrictions, allergies, celebrations…"></textarea>
+      </div>
+      <button class="submit-btn" onclick="submitReservation()">Confirm Reservation</button>
+    </div>
+ 
+    <div class="success-msg" id="success-msg">
+      <span class="s-kanji">ありがとう</span>
+      <h3>Reservation Received</h3>
+      <p>We have received your request and will send a confirmation to your email within 24 hours.<br>We look forward to welcoming you to KŌEN.</p>
+    </div>
+ 
+    <p class="reserve-note">
+      For same-day reservations or private dining, please call us at <a href="tel:+12125550198">+1 (212) 555-0198</a><br>
+      or email <a href="mailto:reserve@koen-nyc.com">reserve@koen-nyc.com</a>
+    </p>
+  </div>
+</section>
