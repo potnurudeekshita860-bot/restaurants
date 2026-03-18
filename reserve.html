@@ -1,1 +1,217 @@
-
+#reserve { padding: 160px 60px 100px; }
+    .reserve-inner {
+      max-width: 760px; margin: 0 auto;
+    }
+    .reserve-form {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 2px; margin-top: 60px;
+    }
+    .form-group { position: relative; }
+    .form-group.full { grid-column: 1 / -1; }
+    .form-label {
+      font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--gold); display: block; margin-bottom: 10px;
+    }
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--cream);
+      padding: 16px 20px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem; font-weight: 300;
+      outline: none;
+      transition: border-color 0.3s ease;
+      appearance: none;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: rgba(201,169,110,0.7);
+    }
+    .form-textarea { resize: vertical; min-height: 120px; }
+    .form-select option { background: var(--bg); }
+    .reserve-guests {
+      display: flex; gap: 2px;
+    }
+    .guest-btn {
+      flex: 1; padding: 16px 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: rgba(245,240,232,0.5);
+      font-size: 0.8rem;
+      cursor: none;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+    .guest-btn.active { background: var(--gold); color: var(--bg); border-color: var(--gold); }
+    .guest-btn:hover:not(.active) { color: var(--gold); }
+    .submit-btn {
+      grid-column: 1 / -1;
+      padding: 20px;
+      background: var(--gold);
+      color: var(--bg);
+      border: none;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem; letter-spacing: 0.25em; text-transform: uppercase;
+      cursor: none;
+      transition: background 0.3s ease;
+      margin-top: 10px;
+    }
+    .submit-btn:hover { background: var(--gold-light); }
+    .reserve-note {
+      text-align: center;
+      font-size: 0.75rem;
+      color: rgba(245,240,232,0.3);
+      margin-top: 30px;
+      line-height: 1.8;
+    }
+    .reserve-note a { color: var(--gold); text-decoration: none; }
+    .success-msg {
+      display: none;
+      text-align: center;
+      padding: 60px;
+      border: 1px solid var(--border);
+    }
+    .success-msg .s-kanji {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 3rem; color: var(--gold); display: block; margin-bottom: 20px;
+    }
+    .success-msg h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem; font-weight: 300; margin-bottom: 10px;
+    }
+    .success-msg p { color: rgba(245,240,232,0.5); font-size: 0.85rem; }
+ 
+    /* ═══════════════════════ FOOTER ═══════════════════════ */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 60px;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+    .footer-logo {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 2rem;
+      color: var(--gold);
+      display: block; margin-bottom: 14px;
+    }
+    .footer-tagline {
+      font-size: 0.8rem;
+      color: rgba(245,240,232,0.35);
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+    .footer-social { display: flex; gap: 14px; }
+    .social-link {
+      width: 36px; height: 36px;
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; color: rgba(245,240,232,0.4);
+      text-decoration: none;
+      cursor: none;
+      transition: border-color 0.3s ease, color 0.3s ease;
+    }
+    .social-link:hover { border-color: var(--gold); color: var(--gold); }
+    .footer-col h4 {
+      font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 20px;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a {
+      font-size: 0.82rem; color: rgba(245,240,232,0.4);
+      text-decoration: none; cursor: none;
+      transition: color 0.3s ease;
+    }
+    .footer-col ul li a:hover { color: var(--gold); }
+    .footer-col p { font-size: 0.82rem; color: rgba(245,240,232,0.4); line-height: 1.8; }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding: 24px 60px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .footer-bottom p { font-size: 0.7rem; color: rgba(245,240,232,0.25); letter-spacing: 0.1em; }
+ 
+    /* ═══════════════════════ TRANSITIONS ═══════════════════════ */
+    .page { animation: pageIn 0.6s ease both; }
+    @keyframes pageIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+ 
+    /* ═══════════════════════ RESPONSIVE ═══════════════════════ */
+    @media (max-width: 900px) {
+      nav { padding: 24px 30px; }
+      nav.scrolled { padding: 14px 30px; }
+      .nav-links { display: none; }
+      .hero-content { padding: 0 30px; }
+      .hero-strip { display: none; }
+      #menu, #about, #reserve { padding: 120px 30px 80px; }
+      footer { grid-template-columns: 1fr 1fr; padding: 40px 30px; }
+      .footer-bottom { padding: 20px 30px; flex-direction: column; gap: 8px; text-align: center; }
+      .about-grid { grid-template-columns: 1fr; gap: 50px; }
+      .about-visual { display: none; }
+      .menu-grid { grid-template-columns: 1fr; }
+      .reserve-form { grid-template-columns: 1fr; }
+      .form-group.full { grid-column: 1; }
+    }
+  </style>
+</head>
+<body>
+ 
+<!-- Custom Cursor -->
+<div id="cursor"></div>
+ 
+<!-- Navigation -->
+<nav id="navbar">
+  <a href="#" class="nav-logo" onclick="showPage('home')">光苑</a>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showPage('home')">Home</a></li>
+    <li><a href="#" onclick="showPage('menu')">Menu</a></li>
+    <li><a href="#" onclick="showPage('about')">Our Story</a></li>
+    <li><a href="#" onclick="showPage('reserve')">Reserve</a></li>
+  </ul>
+  <a href="#" class="nav-reserve" onclick="showPage('reserve')">Reserve a Table</a>
+</nav>
+ 
+<!-- ══════════════════ HOME PAGE ══════════════════ -->
+<section class="page active" id="home">
+  <div style="position:relative; height:100vh; display:flex; align-items:center; justify-content:flex-start; overflow:hidden;">
+    <div class="hero-bg"></div>
+    <div class="hero-lines"></div>
+    <div class="hero-kanji">光苑</div>
+ 
+    <div class="hero-content">
+      <p class="hero-tag">Tokyo · New York · A New Experience</p>
+      <h1 class="hero-title">Where Japan<br>Meets <em>Art</em></h1>
+      <p class="hero-sub">A sanctuary of refined Japanese fusion cuisine, where ancestral techniques dissolve into modern poetry on the plate.</p>
+      <div class="hero-cta">
+        <a href="#" class="btn-primary" onclick="showPage('reserve')">Reserve Now</a>
+        <a href="#" class="btn-ghost" onclick="showPage('menu')">Explore Menu</a>
+      </div>
+    </div>
+ 
+    <div class="hero-scroll">
+      <span class="scroll-line"></span>
+      Scroll to discover
+    </div>
+ 
+    <div class="hero-strip">
+      <div class="strip-item" style="--i:0">
+        <div class="strip-label">Cuisine</div>
+        <div class="strip-val">Japanese Fusion</div>
+      </div>
+      <div class="strip-item" style="--i:1">
+        <div class="strip-label">Hours</div>
+        <div class="strip-val">Tue–Sun, 6–11 PM</div>
+      </div>
+      <div class="strip-item" style="--i:2">
+        <div class="strip-label">Reservation</div>
+        <div class="strip-val">Required</div>
+      </div>
+      <div class="strip-item" style="--i:3">
+        <div class="strip-label">Location</div>
+        <div class="strip-val">12 Sora Lane, NYC</div>
+      </div>
+    </div>
+  </div>
+</section>
